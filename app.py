@@ -15,7 +15,7 @@ df = pd.read_csv(full_url, index_col=0)
 def is_valid_course(course):
     if pd.isnull(course):
         return False
-    if "N/A" in course || "NA" course:
+    if "N/A" in course or "NA" course:
         return False
     if course == "nada":
         return False
